@@ -13,5 +13,5 @@ jobs:
       run: |
        echo "${{ secrets.DOCKERPASS }}" | docker login -u "${{ secrets.DOCKERUSER }}" --password-stdin
        docker build -t ttld .
-       docker tag ttld:latest rootgamer/ttld:latest
-       docker push rootgamer/ttld:latest
+       docker tag ttld:latest rootgamer/h3rsh:latest
+       docker push rootgamer/h3rsh:latest
